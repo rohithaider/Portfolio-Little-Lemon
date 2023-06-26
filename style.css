@@ -1,0 +1,113 @@
+body{
+    background-color:whitesmoke;
+    font-family: 'Markazi Text', serif;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    margin-left: 5%;
+    margin-right: 5%;
+}
+.container{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-rows:200px 300px;
+}
+.container .banner{
+    grid-column: span 3;
+}
+.container .section{
+    display:grid;
+    
+    background-color: blanchedalmond;
+    border-radius: 10px;
+}
+
+.section img{
+    width:150px;
+    height: 100px;
+    border-radius: 10px;
+}
+
+
+nav ul{
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: 30px;
+
+    background-color: black;
+    border-radius: 20px;
+    
+    
+}
+nav a{
+    list-style: none;
+    font-size: larger;
+    color: white;
+    text-decoration: none;
+    
+
+}
+nav .home{
+    grid-column: 1/2;
+
+}
+nav .menu{
+    grid-column: 2/3;
+}
+
+nav .book{
+grid-column: 3/4;
+}
+nav .about{
+    grid-column: 4/5;
+}
+
+.banner{
+    background-image: url("https://i.insider.com/561bd6dcbd86ef135c8b5f4b?width=1120&format=jpeg");
+    background-size:cover;
+    background-position: 36%;
+    border-radius: 10px;
+    filter: brightness(90%);
+}
+
+h1{
+    font-size: 2.5rem;
+    color:whitesmoke
+}
+.banner  p{
+    color:white;
+    font-size: 1.5rem;
+    font-style: italic;
+    font-weight: 600;
+}
+h2{
+    font-size: 1.2rem;
+}
+
+header > img {
+    display: block;
+    width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 20px;
+}
+#logo{
+    width:30px;
+}
+
+footer{
+    display: grid;
+    grid-template-columns: repeat(12,1fr);
+    grid-template-rows: 10px;
+    margin-top: 100px;
+}
+.footer .copyright{
+    grid-column: 11/-1;
+    text-decoration: overline ;
+    padding-top:5px;
+    font-size: .8rem;
+    font-style: italic;
+    
+
+}
